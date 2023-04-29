@@ -191,11 +191,29 @@ body {
   text-align: center;
 }
 
+.main-menu__list .main-menu__item:hover .sub-menu__list::before {
+  content:'';
+  width: 100%;
+  height: 12px;
+  display: block;
+  background: #ffffff;
+  opacity: 0;
+  position: absolute;
+  top: -12px;
+  left: 0;
+}
+
+.main-menu__link:hover ~ .sub-menu__list {
+  display: block;
+  text-align: center;
+}
+
 .sub-menu__list {
   display: none;
   min-width: 220px;
   position: absolute;
-  left: -50px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 30px;
   z-index: 99;
   border-radius: 8px;
