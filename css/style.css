@@ -171,14 +171,6 @@ body {
     font-size: 18px;
 }
 
-/*----- .main-menu__link:hover {
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  transition-duration: 0.15s, 0.15s, 0.15s;
-  transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
-  transition-delay: 0s, 0s, 0s;
-  transition-property: color, background-color, border-color;
-} -----*/
-
 .main-menu__link.active {
     color: var(--blue-color);
     border-bottom: 2px solid var(--blue-color);
@@ -187,6 +179,10 @@ body {
 .main-menu__link:hover {
     color: var(--blue-color);
     transition: 0.3s ease-in-out;
+}
+
+.main-menu__link i {
+    vertical-align: middle;
 }
 
 .main-menu__item {
@@ -719,3 +715,51 @@ body {
 }
 
 /*----- Footer Section END -----*/
+
+/*----- Back to Top button START -----*/
+
+.scroll-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: block;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    --webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgba(6, 106, 201, 0.1);
+    color: var(--blue-color);
+    border-radius: 10%;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.scroll-top:hover {
+    background-color: var(--blue-color);
+    color: #ffffff;
+}
+
+.scroll-top.scroll-top-show {
+    visibility: visible;
+    opacity: 1;
+    --webkit-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.scroll-top i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 15px;
+    vertical-align: middle;
+    --webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*----- Back to Top button END -----*/
