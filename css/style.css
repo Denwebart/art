@@ -718,48 +718,72 @@ body {
 
 /*----- Back to Top button START -----*/
 
-.scroll-top {
-    cursor: pointer;
+/*.scroll-top {*/
+/*    cursor: pointer;*/
+/*    position: fixed;*/
+/*    bottom: 40px;*/
+/*    right: 40px;*/
+/*    display: block;*/
+/*    z-index: 99;*/
+/*    visibility: hidden;*/
+/*    opacity: 0;*/
+/*    --webkit-transform: translateY(50%);*/
+/*    transform: translateY(50%);*/
+/*    -webkit-transition: all 0.3s ease-in-out;*/
+/*    transition: all 0.3s ease-in-out;*/
+/*    background: rgba(6, 106, 201, 0.1);*/
+/*    color: var(--blue-color);*/
+/*    border-radius: 10%;*/
+/*    width: 52px;*/
+/*    height: 52px;*/
+/*    line-height: 52px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.scroll-top:hover {*/
+/*    background-color: var(--blue-color);*/
+/*    color: #ffffff;*/
+/*}*/
+
+/*.scroll-top.scroll-top-show {*/
+/*    visibility: visible;*/
+/*    opacity: 1;*/
+/*    --webkit-transform: translateY(0%);*/
+/*    transform: translateY(0%);*/
+/*}*/
+
+/*.scroll-top i {*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    font-size: 15px;*/
+/*    vertical-align: middle;*/
+/*    --webkit-transform: translate(-50%, -50%);*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+#scrollBtn {
+    display: none;
     position: fixed;
-    bottom: 40px;
-    right: 40px;
-    display: block;
+    bottom: 30px;
+    right: 30px;
     z-index: 99;
-    visibility: hidden;
-    opacity: 0;
-    --webkit-transform: translateY(50%);
-    transform: translateY(50%);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background: rgba(6, 106, 201, 0.1);
+    background-color: rgba(6, 106, 201, 0.2);
     color: var(--blue-color);
-    border-radius: 10%;
+    border: none;
+    outline: none;
+    cursor: pointer;
     width: 52px;
     height: 52px;
     line-height: 52px;
-    text-align: center;
+    border-radius: 10%;
+    transition: all 0.3s ease-in-out;
 }
 
-.scroll-top:hover {
+#scrollBtn:hover {
     background-color: var(--blue-color);
     color: #ffffff;
-}
-
-.scroll-top.scroll-top-show {
-    visibility: visible;
     opacity: 1;
-    --webkit-transform: translateY(0%);
-    transform: translateY(0%);
-}
-
-.scroll-top i {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    font-size: 15px;
-    vertical-align: middle;
-    --webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
 
 /*----- Back to Top button END -----*/
