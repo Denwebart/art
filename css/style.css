@@ -469,6 +469,10 @@ body {
     padding: 26px;
 }
 
+.benefit__item-inner img {
+    width: 63px;
+}
+
 /*----- Benefits Section END -----*/
 
 /*----- News Section START -----*/
